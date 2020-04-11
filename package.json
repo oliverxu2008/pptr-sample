@@ -1,0 +1,26 @@
+{
+  "name": "pptr-sample",
+  "version": "1.0.0",
+  "description": "Puppeteer sample project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha --timeout=30000 ./tests/sample.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliverxu2008/pptr-sample.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oliverxu2008/pptr-sample/issues"
+  },
+  "homepage": "https://github.com/oliverxu2008/pptr-sample#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "prettier": "^2.0.2",
+    "puppeteer": "^2.1.1"
+  }
+}
