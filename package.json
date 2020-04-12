@@ -6,7 +6,9 @@
   "scripts": {
     "test": "node node_modules/mocha/bin/mocha --timeout=30000 ./tests/sample.test.js",
     "test:config": "node node_modules/mocha/bin/mocha --timeout=30000 ./tests/sampleConfig.test.js",
-    "test:steps": "node node_modules/mocha/bin/mocha --timeout=30000 ./tests/sampleWSteps.test.js"
+    "test:steps": "node node_modules/mocha/bin/mocha --timeout=30000 ./tests/sampleWSteps.test.js",
+    "test:bdd": "node node_modules/cucumber/bin/cucumber-js -f json:target/cucumber_report.json",
+    "test:report": "node report.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,8 @@
   "homepage": "https://github.com/oliverxu2008/pptr-sample#readme",
   "dependencies": {
     "chai": "^4.2.0",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.2.0",
     "mocha": "^7.1.1",
     "prettier": "^2.0.2",
     "puppeteer": "^2.1.1"
