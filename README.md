@@ -9,3 +9,7 @@ npm run test
 npm run test:config
 ## How to run the test with details steps plus the config integration
 npm run test:steps
+## how to run the BDD cucumber test and report
+npm run test:bdd
+npm run test:report
+
