@@ -48,22 +48,16 @@ describe('Green Kart Web Test', () => {
             .then(el => {
                 el[0].click()
             })
-        
-        await page.waitFor(1000)
 
         await page.$x("//a[@class='cart-icon']/img[@alt='Cart']")
             .then(el => {
                 el[0].click()
             })
 
-        await page.waitFor(1000)
-
         await page.$x("//button[contains(text(),'PROCEED TO CHECKOUT')]")
             .then(el => {
                 el[0].click()
             })
-        
-        await page.waitFor(1000)
 
         await page.waitForSelector('.promoCode')
         await page.type('.promoCode', '123456')
@@ -74,6 +68,7 @@ describe('Green Kart Web Test', () => {
             .then(el => {
                 el[0].click()
             })
+            
         await page.waitForSelector('.products-wrapper')
         await page.select('select', 'Australia')
         await page.waitFor(1000)

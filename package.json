@@ -4,7 +4,9 @@
   "description": "Puppeteer sample project",
   "main": "index.js",
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha --timeout=30000 ./tests/sample.test.js"
+    "test": "node node_modules/mocha/bin/mocha --timeout=30000 ./tests/sample.test.js",
+    "test:config": "node node_modules/mocha/bin/mocha --timeout=30000 ./tests/sampleConfig.test.js",
+    "test:steps": "node node_modules/mocha/bin/mocha --timeout=30000 ./tests/sampleWSteps.test.js"
   },
   "repository": {
     "type": "git",
