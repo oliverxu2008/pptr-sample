@@ -8,4 +8,4 @@ npm run test
 ## How to run the test with integration to config, helper and utils
 npm run test:config
 ## How to run the test with details steps plus the config integration
-npm run test:config
+npm run test:steps
