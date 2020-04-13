@@ -7,7 +7,7 @@
     "test": "node node_modules/mocha/bin/mocha --timeout=30000 ./tests/sample.test.js",
     "test:config": "node node_modules/mocha/bin/mocha --timeout=30000 ./tests/sampleConfig.test.js",
     "test:steps": "node node_modules/mocha/bin/mocha --timeout=30000 ./tests/sampleWSteps.test.js",
-    "test:bdd": "node node_modules/cucumber/bin/cucumber-js -f json:target/cucumber_report.json",
+    "test:bdd": "node node_modules/cucumber/bin/cucumber-js --fail-fast --tags \"@SmokeTest\" -f json:target/cucumber_report.json",
     "test:report": "node report.js"
   },
   "repository": {
